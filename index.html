@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Questions </title>
+</head>
+<body>
+  <h1> JavaScript </h1>
+  <h4> 1. Name the three ways to declare a variable? </h4>
+  <p>
+    There are 3 keywords to declare a variable: var, let, const
+  </p>
+
+  <h4>
+    2. Which of the three variable declarations should you avoid and why?
+  </h4>
+  <p>
+    Var. Because var allows re-declaration. And it's not limited with it's 
+    scope. So, it's risky to use var.
+  </p>
+
+  <h4> 3. What rules should you follow when naming variables? </h4>
+  <p> 
+    The name can only contain letters, numbers, $ symbol and _ symbol.
+    First letter can not be a number, but can be $ or _
+    Reserved keywords such as var, let etc. can not be used as variable
+    names.
+    Most preferred multiple word writing style is camelCase
+    Non-Latin letters, words can be used, but it's not recommended.
+  </p>
+
+  <h4>
+    4. What should you look out for when using the + operator with numbers 
+    and strings?
+  </h4>
+  <p>
+    When we use + operator with numbers and string, js converts number to 
+    string and it concatenates the 2 strings into a new string. So, we 
+    should look out for what we want to achive with using + operator.
+  </p>
+
+  <h4> 5. How does the % operator work?	</h4>
+  <p>
+    The % symbol returns the remainder of a division operation.
+  </p>
+
+  <h4> 6. Explain the difference between == and ===. </h4>
+  <p>
+    Regular equality check which is ==, converts operants to numbers, then
+    checks the equality. This might cause unwanted results sometimes.
+    On the other hand, the strict equality operator which is ===, compares 
+    the values with the data types of the operands.
+  </p>
+
+  <h4>
+    7. When would you receive a NaN result?
+  </h4>
+  <p>
+    When you use a mathematical operation other than +, if one of the 
+    operands is string and the other one is number or boolean you get NaN. 
+  </p>
+
+  <h4> 8. How do you increment and decrement a number? </h4>
+  <p> Using + and - operators. </p>
+
+  <h4>
+    9. Explain the difference between prefixing and post-fixing 
+    increment/decrement operators.
+  </h4>
+  <p>
+    In pre-fixing, first the current value is incremented/decremented, 
+    then used inside the expression. 
+    On the other hand, in post-fixing, first the current value is used 
+    inside the expression, then incremented/decremented.
+  </p>
+
+  <h4>
+    10. What is operator precedence and how is it handled in JS?
+  </h4>
+  <p>
+    Operations in parentheses have the highest priority. Then * and / 
+    operations take precedence over + and - operations. When the operations 
+    of equal degree (such as * and /) are side by side, the operation is 
+    done from left to right.
+  </p>
+
+  <h4> 11. How do you log information to the console? </h4>
+  <p> With console.log() function </p>
+
+  <h4>
+    12. What does unary plus operator do to string representations of 
+    integers?
+  </h4>
+  <p> It converts them to numbers(integers). </p>
+
+  <h4> 13. What are the eight data types in JavaScript? </h4>
+  <p>
+    String, number, boolean, object, symbol, undefined, null, BigInt
+  </p>
+
+  <h4> 14. Which data type is NOT primitive? </h4>
+  <p> Object </p>
+
+  <h4> 15. What is the relationship between null and undefined? </h4>
+  <p>
+    If we don't assign any value to a variable it becomes undefined. It 
+    means the variable has no value and it never had. 
+    However with null, the variable has a value which is null but it has 
+    no value. It's really hard to describe what null is. But in 
+    undefined, variable has no value; in null, variable has a value named 
+    null.
+    They're equal in regular equality check, but not equal in strict equality
+    check. Also in comparisons such as <, > null becomes 0, undefined becomes
+    NaN. 
+  </p>
+
+  <h4>
+    16. What is the difference between single, double, and backtick quotes 
+    for strings?
+  </h4>
+  <p>
+    There is no difference between single and double quotes for strings. But
+    backtick is different, because it allows to insert variables/expressions 
+    inside the quotes.
+  </p>
+
+  <h4>
+    17. What is the term for embedding variables/expressions in a string?
+  </h4>
+  <p> String interpolation, Template literals </p>
+
+  <h4>
+    18. Which type of quote lets you embed variables/expressions in a string?
+  </h4>
+  <p> Backticks </p>
+
+  <h4>
+    19. How do you embed variables/expressions in a string?
+  </h4>
+  <p> `${variableName}` </p>
+
+  <h4> 20. How do you escape characters in a string? </h4>
+  <p>	With backslash (\) </p>
+  
+  <h4>
+    21. What is the difference between the slice/substring/substr string 
+    methods?
+  </h4>
+  <p>
+    All 3 of them takes 2 parameters. In slice and substring, parameters 
+    are startIndex and endIndex. In substr, it's startIndex and length.
+    First parameter is mandatory and second is optional in all of them.
+    In slice method, if startIndex is greater than or equal to endIndex
+    it returns an empty string.
+    In substr method, if startIndex is greater than or equal to endIndex
+    it returns the entire string.
+    In substring method, if startIndex is greater than endIndex, it swaps
+    the two arguments. Also it returns the entire string if 2 parameters
+    are equal.
+  </p>
+
+  <h4>
+    22. What are the three logical operators and what do they stand for?
+  </h4>
+  <p>
+    1.AND (&&): Returns true if both expressions are true. Returns false
+    otherwise.
+    2.OR (||): Returns true if at least one of the expressions are true. 
+    Returns false otherwise.
+    3.NOT (!): Gives the opposite boolean value of a value.
+  </p>
+
+  <h4> 23. What are the comparison operators? </h4>
+  <p>
+    1. == (regular equality check)
+    2. === (strict equality check)
+    3. != (regular not equal to)
+    4. !== (strict not equal to)
+    5. > (greater than)
+    6. < (less than)
+    7. >= (greater than or equal to)
+    8. <= (less than or equal to)
+  </p>
+
+  <h4> 24. What are truthy and falsy values? </h4>
+  <p>
+    If a value considered as false for it's boolean value, this means it's a 
+    falsy value. It's a truthy value otherwise.
+  </p>
+      
+  <h4> 25. What are the falsy values in JavaScript? </h4>
+  <p>
+    Falsy values are limited, the rest are truthy values.
+    Here are the falsy values:
+    1. false
+    2. 0
+    3. ""
+    4. null
+    5. undefined
+    6. NaN
+    7. -0
+  </p>
+
+  <h4> 26. What are conditionals? </h4>
+  <p>
+    Conditionals are used to execute a block of statements depending on 
+    certain conditions. Commands will be executed if condition is true.
+    Conditionals in js are if/(else if)/else and switch/case.
+  </p>
+
+  <h4> 27. What is the syntax for an if/else conditional? </h4>
+  <p>
+    if (condition) {
+      this command will be executed if condition is true
+    } else {
+      this command will be executed if condition is false
+    }
+  </p>
+
+  <h4> 28. What is the syntax for a switch statement? </h4>
+  <p>
+    switch(statement) {
+      case condition:
+        this command will be executed if case is this condition
+        break;
+      case anotherCondition:
+        ...
+        ...
+    }
+  </p>
+
+  <h4> 29. What is the syntax for a ternary operator? </h4>
+  <p>
+    condition
+    ? this command will be executed if command is true
+    : this command will be executed if command is false
+  </p>
+
+  <h4> 30. What is nesting? </h4>
+  <p>
+    In js, curly braces represent scopes. When we use one scope inside
+    of another scope, which can repeat indefinitely, we use nesting.
+  </p>
+
+  <h4> 31. What are functions useful for? </h4>
+  <p>
+    Functions help us to write clean and DRY(don't repeat yourself)
+    code. We can get different solutions with using only one function.
+    This way, functions save us from repeating ourselves and make our 
+    codes reusable.
+    Also, using functions make our files more clean and make our codes
+    more readable. 
+  </p>
+
+  <h4> 32. How do you invoke a function? </h4>
+  <p>
+    With writing it's name and adding parantheses to end of it. example()
+  </p>
+
+  <h4> 33. What are anonymous functions? </h4>
+  <p>
+    Anonymous functions are functions with no names. Because of that 
+    we can't invoke an anonymous function after we declare it. We need 
+    to assign it to a value if we want to re-use it.
+  </p>
+
+  <h4> 34. What is function scope? </h4>
+  <p>
+    Function scope is the space where we write our codes between the 
+    curly braces that show the start and end of the function.
+    Variables that declared inside a function scope can not be accessed
+    from outside of that scope.
+  </p>
+
+  <h4> 35. What are return values? </h4>
+  <p>
+    A return value is the value of a functions returns when it finishes
+    executing. It can be any data type such as object, array, string etc.
+    It can even be another function.
+  </p>
+
+  <h4> 36. What are arrow functions? </h4>
+  <p>
+    Arrow functions are a new feature in js that comes with ES6. If we 
+    don't create the curly braces that represent the function scope, 
+    arrow function returns the code automatically. Also arrow 
+    functions have lexical scoping, which means we don't need to do 
+    binding when creating object methods.
+  </p>
+</body>
+</html>
